@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF to Image Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>PDF to Image Converter</h1>
+
+    <input type="file" id="pdfUpload" accept="application/pdf">
+    <button id="convertBtn">Convert It</button>
+    <div id="loading" class="hidden">Processing... ⏳</div>
+
+    <div id="downloadButtons" class="hidden">
+      <button id="downloadPngBtn">Download as PNG</button>
+      <button id="downloadJpgBtn">Download as JPG</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
